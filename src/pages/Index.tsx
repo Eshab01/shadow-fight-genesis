@@ -1,14 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React, { useEffect, useRef } from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import { toast } from '@/hooks/use-toast';
+import AnimationPlayer from '@/components/AnimationPlayer';
+
+export default function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-bold text-center mb-8">RISE OF THE SHADOW</h1>
+      <Card className="mx-auto max-w-4xl">
+        <CardContent className="p-6">
+          <AnimationPlayer />
+        </CardContent>
+      </Card>
     </div>
   );
-};
-
-export default Index;
+}
